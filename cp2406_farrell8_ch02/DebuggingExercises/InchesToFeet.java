@@ -1,6 +1,4 @@
-/**
- * Created by jc209333 on 8/08/16.
- */
+
 public class InchesToFeet {
     public static void main(String[] args) {
         int inches = 1;
