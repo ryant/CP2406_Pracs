@@ -7,7 +7,7 @@ public class FixDebugThree3
       String name = getName();
       displayGreeting(name);           
    }
-   public static String getName()
+   private static String getName()
    {
       String name;
       Scanner input = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class FixDebugThree3
       name = input.nextLine();
       return name;
    }
-   public static void displayGreeting(String name)
+   private static void displayGreeting(String name)
    {
       System.out.println("Hello, " + name + "!");
    }
