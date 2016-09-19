@@ -1,11 +1,11 @@
 // A Vacation is 10 days
 // but an ExtendedVacation is 30 days
-public class DebugTen2
+public class FixDebugTen2
 {
    public static void main(String args[]) 
    {
-      DebugVacation myVacation= new DebugVacation();
-      DebugExtendedVacation yourVacation = new DebugExtendedVacation();
+      FixDebugVacation myVacation= new FixDebugVacation();
+      FixFixDebugExtendedVacation yourVacation = new FixFixDebugExtendedVacation();
       System.out.println("My vacation is for " +
          myVacation.getDays() + " days");
       System.out.println("Your vacation is for " +

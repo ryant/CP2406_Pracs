@@ -1,6 +1,6 @@
 // A customer's purchase is approved if the
 // purchase does not exceed the credit limit
-public class DebugTen4
+public class FixDebugTen4
 {
    public static void main(String args[])
    {
@@ -8,8 +8,8 @@ public class DebugTen4
       String name = "Franklin";
       double credit = 1000.00;
       double purchase = 1325.77;
-      DebugCustomerMakingPurchase cust = new
-         DebugCustomerMakingPurchase(id, credit, name, purchase);
+      FixDebugCustomerMakingPurchase cust = new
+              FixDebugCustomerMakingPurchase(id,  name, credit, purchase);
       cust.display();
    }
 }
