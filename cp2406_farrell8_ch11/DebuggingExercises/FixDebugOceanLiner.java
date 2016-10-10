@@ -1,8 +1,8 @@
-public class DebugOceanLiner extends DebugBoat
+public class FixDebugOceanLiner extends FixDebugBoat
 {
-   public DebugOceanLiner()
+   public FixDebugOceanLiner()
    {
-      Debug("ocean liner ");
+      super("ocean liner ");
       setPassengers();
       setPower();
    }
