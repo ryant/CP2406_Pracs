@@ -6,31 +6,31 @@ import java.io.*;
 import java.nio.channels.FileChannel;
 import java.nio.ByteBuffer;
 import static java.nio.file.StandardOpenOption.*;
-public class DebugThirteen2
+public class FixDebugThirteen2
 {
    public static void main(String[] args)
    {
       Path fileIn =
-         Paths.get(C:\\Java\\Chapter.13\\DebugData3.txt);
+         Paths.get("./DebuggingExercises/DebugData3.txt");
       Path fileOut =
-         Paths.get(C:\\Java\\Chapter.13\\DebugData3New.txt);
+         Paths.get("./DebuggingExercises/DebugData3New.txt");
       String areaCode = "(312) ";
       String phone;
       InputStream input = null;
-      OutputStream output = null
+      OutputStream output = null;
       try
       {
          input = Files.newInputStream(fileIn);
          BufferedReader reader = new BufferedReader
-            (new InputStreamReader(input);
+            (new InputStreamReader(input));
          output = Files.newOutputStream(fileOut);
-         phone = input.readLine();
+         phone = reader.readLine();
          while(phone == null)
          {
             phone = areaCode + phone + System.getProperty("line.separator");
             byte[] phoneBytes = phone.getBytes();
-            output.writeln(phoneBytes);
-            phone = reader.readline();
+            output.write(phoneBytes);
+            phone = reader.readLine();
          }
          input.close();
        }
