@@ -10,7 +10,7 @@ public class FixDebugOceanLiner extends FixDebugBoat
    {
       super.passengers = 2400;
    }
-   public void power()
+   public void setPower()
    {
       super.power = "four engines";
    }

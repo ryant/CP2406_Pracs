@@ -7,8 +7,7 @@ public abstract class FixDebugBoat
    {
       boatType = bt;
    }
-   // override equals() method to satisfy
-   // requirements of Debug Exercise 3.
+
    public boolean equals(FixDebugBoat otherBoat)
    {
       boolean result;
